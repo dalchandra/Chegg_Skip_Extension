@@ -1,0 +1,1 @@
+# Chegg_Skip_Extension
