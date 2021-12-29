@@ -5,7 +5,6 @@
 4. Refresh Chegg QNA Dashboard and enjoy it.
 
 **For Use in Kiwi Browser**
-
 1. Download zip in (https://github.com/dalchandra/Chegg_Skip_Extension) page
 2. Open Chrome and navigate to extensions settings tabs , enable the Developer mode
 4. Click on 'select from .zip' and select downloaded .zip file.
