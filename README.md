@@ -1,5 +1,5 @@
 **Features**
-1. Skip Chegg Question with reason don't have subject knowledge with just single click!
+1. Skip Chegg Question with reason "don't have subject knowledge" with just single click!
 2. Automatic Refresh Page When Questions are not aviable
 3. Sound Alert when New Question is Aviable.
 
