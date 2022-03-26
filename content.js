@@ -65,7 +65,7 @@ function skip(){
             if (document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-4 gixyh iRbxZC")[0])
 		        document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-4 gixyh iRbxZC")[0].click()
             else
-                document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-4 bbEETb iRbxZC")[0].click() // modal submit
+                document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-4 bbEETb iRbxZC")[0].click()
 		}
 }
 setTimeout(function(){
