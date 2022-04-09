@@ -1,11 +1,6 @@
-/**
- * global variable: It is used to check if the current path is required path which is expertqna path or not
- */
 var targetPath = "https://expert.chegg.com/expertqna";
 var exitClassName = "sc-1eq90u-3 sc-1eq90u-7 jaaInW"; // to hide btn when exit is clicked
-/**
- * On load of the window, skip btn is created and appended to document's body
- */
+
 window.addEventListener("load", function(event){
     let currentPath = window.location.href;
     let skipBtn = document.createElement("button");
@@ -33,13 +28,9 @@ window.addEventListener("click", function(event){
     let currentPath = window.location.href;
     // check for existence of ski btn using skip_extension_btn id
     if(document.getElementById("skip_extension_btn") != null){
-        // means already existed
-        // check for visibility
         if(currentPath == targetPath){
-            // whatever the btn visibility status, we set it to visible
             document.getElementById("skip_extension_btn").style.visibility = "visible";
         }else{
-            // whatever the btn visibility status, we set it to hidden
             document.getElementById("skip_extension_btn").style.visibility = "hidden";
         }
     }else{
@@ -47,9 +38,6 @@ window.addEventListener("click", function(event){
     }
 });
 
-/**
- * skip() function does the main work of skipping the question using DOM.
- */
 var i=1;
 function skip(){
 		if(document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-5 cggaqZ noeGi")[0]==null)
