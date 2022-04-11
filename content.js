@@ -17,9 +17,7 @@ window.addEventListener("load", function(event){
     document.body.appendChild(skipBtn);
 })
 
-/**
- * This will be useful, to hide or show the skip button based on the current url or path
- */
+
 window.addEventListener("click", function(event){
     if(event.target.className == exitClassName){
         document.getElementById("skip_extension_btn").style.visibility = "hidden";
