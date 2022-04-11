@@ -34,7 +34,7 @@ window.addEventListener("click", function(event){
             document.getElementById("skip_extension_btn").style.visibility = "hidden";
         }
     }else{
-        // this should not be reached
+        //never reach
     }
 });
 
