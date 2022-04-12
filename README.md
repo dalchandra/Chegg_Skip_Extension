@@ -17,4 +17,4 @@
 4. Click on 'select from .zip' and select downloaded .zip file.
 5. Refresh Chegg QNA Dashboard and enjoy it.
 
-**If you Feel some changes are needed in Extension, Feele free to contribution**
+**If you Feel some changes are needed in Extension, Feel free to contribution**
