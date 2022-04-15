@@ -12,7 +12,7 @@
 5. Refresh Chegg QNA Dashboard and enjoy it.
 
 ### How to Use in Kiwi Browser(Smartphone)
-1. Download zip file from [here](https://github.com/dalchandra/Chegg_Skip_Extension) link
+1. Download zip file from [here](https://github.com/dalchandra/Chegg_Skip_Extension)
 2. Open Kiwi Browser and navigate to extensions settings tabs
 3. Enable Developer mode
 4. Click on `select from .zip` and select downloaded `.zip` file.
