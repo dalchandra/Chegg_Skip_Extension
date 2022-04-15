@@ -1,3 +1,4 @@
+# Chegg Skip Extension || Skip Question in a Single Click 
 **Features**
 1. Skip Chegg Question with reason "don't have subject knowledge" with just single click!
 2. Automatic Refresh Page When Questions are not avilable
