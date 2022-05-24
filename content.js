@@ -56,7 +56,7 @@ function skip(){
 		}
 }
 setTimeout(function(){
-	if(document.getElementsByClassName("sc-1eq90u-3 sc-1eq90u-5 cggaqZ noeGi")[0]==null)
+	if(document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-7 bSVpBt ixAKLL")[0]==null)
 	{
 		window.open("https://expert.chegg.com/expertqna","_self");
 	}
