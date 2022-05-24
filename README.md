@@ -3,6 +3,7 @@
 1. Skip Chegg Question with reason `don't have subject knowledge` with just single click!
 2. Automatic Refresh Page When Questions are not avilable
 3. Sound Alert when New Question is Avilable.
+4. Open Source
 
 ### How to Use in Google Chrome(Desktop/Laptop)
 1. Download zip file from [here](https://github.com/dalchandra/Chegg_Skip_Extension) and unzip to local storage.
