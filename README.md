@@ -11,6 +11,7 @@
 3. Enable Developer mode
 4. Click the Load unpacked extension , select the unzipped folder.
 5. Refresh Chegg QNA Dashboard and enjoy it.
+
 Link For Video [Hindi](https://www.youtube.com/watch?v=IeWLCPJntBo)
 
 ### How to Use in Kiwi Browser(Smartphone)
