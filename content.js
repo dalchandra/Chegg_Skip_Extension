@@ -1,5 +1,5 @@
 var targetPath = "https://expert.chegg.com/expertqna";
-var exitClassName = "sc-1eq90u-7"; // to hide btn when exit is clicked
+var exitClassName = "sc-1eq90u-7 sc-1eq90u-11 ewQEum ggqCcO"; // to hide btn when exit is clicked
 
 window.addEventListener("load", function(event){
     let currentPath = window.location.href;
