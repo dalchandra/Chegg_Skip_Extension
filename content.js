@@ -1,5 +1,9 @@
 var targetPath = "https://expert.chegg.com/expertqna";
 var exitClassName = "sc-1eq90u-7 sc-1eq90u-11 ewQEum ggqCcO"; // to hide btn when exit is clicked
+var skipClassName="sc-1eq90u-7";
+var reasonSelect="q4pgtx-0 dlvpFB";
+var desktopSubmit="sc-1eq90u-7 sc-1eq90u-8 ewQEum iAtkV";
+
 
 window.addEventListener("load", function(event){
     let currentPath = window.location.href;
@@ -19,7 +23,7 @@ window.addEventListener("load", function(event){
 
 
 window.addEventListener("click", function(event){
-    if(event.target.className == exitClassName){
+    if(event.target.parentElement.parentElement.className == exitClassName){
         document.getElementById("skip_extension_btn").style.visibility = "hidden";
         return;
     }
@@ -39,61 +43,24 @@ window.addEventListener("click", function(event){
 var i=1;
 //skip function
 function skip(){
-		if(document.getElementsByClassName("sc-1eq90u-7")[0]==null)///////////Skip Button
+		if(document.getElementsByClassName(skipClassName)[0]==null)///////////Skip Button
 		{
 			window.open("https://expert.chegg.com/expertqna","_self");
 		}
 		else
 		{
 			i=0;
-		    document.getElementsByClassName("sc-1eq90u-7")[0].click() // skip button
-		    let skipOptions = document.getElementsByClassName("q4pgtx-0 dlvpFB");
+		    document.getElementsByClassName(skipClassName)[0].click() // skip button
+		    let skipOptions = document.getElementsByClassName(reasonSelect);
 		    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
-            if (document.getElementsByClassName("sc-1eq90u-7 sc-1eq90u-8 ewQEum iAtkV")[0])
-		        document.getElementsByClassName("sc-1eq90u-7 sc-1eq90u-8 ewQEum iAtkV")[0].click()
-            else
-                document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()///For Mobile
+            if (document.getElementsByClassName(desktopSubmit)[0])
+		        document.getElementsByClassName(desktopSubmit)[0].click()
+            //else
+            //    document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()///For Mobile
 		}
 }
 setTimeout(function(){
-	if(document.getElementsByClassName("sc-1eq90u-7")[0]==null)
-	{
-		if(window.location.href==targetPath)
-			window.open("https://expert.chegg.com/expertqna","_self");
-	}
-	else if(i==1)
-	{
-		i=0;
-		var sound = new Audio;
-		sound.src = "https://assets.mixkit.co/sfx/download/mixkit-arcade-retro-game-over-213.wav";
-		sound.play();
-	}
-},15000);
-
-
-});
-
-var i=1;
-//skip function
-function skip(){
-		if(document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-7 bSVpBt ixAKLL")[0]==null)
-		{
-			window.open("https://expert.chegg.com/expertqna","_self");
-		}
-		else
-		{
-			i=0;
-		    document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-7 bSVpBt ixAKLL")[0].click() // skip button
-		    let skipOptions = document.getElementsByClassName("q4pgtx-0 dlvpFB");
-		    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
-            if (document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 drYDRY ibrWOj")[0])
-		        document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 drYDRY ibrWOj")[0].click()
-            else
-                document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()
-		}
-}
-setTimeout(function(){
-	if(document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-7 bSVpBt ixAKLL")[0]==null)
+	if(document.getElementsByClassName(skipClassName)[0]==null)
 	{
 		if(window.location.href==targetPath)
 			window.open("https://expert.chegg.com/expertqna","_self");
