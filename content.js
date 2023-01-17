@@ -43,16 +43,16 @@ window.addEventListener("click", function(event){
 var i=1;
 //skip function
 function skip(){
-		if(document.getElementsByClassName(skipClassName)[0]==null)///////////Skip Button
-		{
-			window.open("https://expert.chegg.com/expertqna","_self");
-		}
-		else
-		{
-			i=0;
-		    document.getElementsByClassName(skipClassName)[0].click() // skip button
-		    let skipOptions = document.getElementsByClassName(reasonSelect);
-		    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
+	if(document.getElementsByClassName(skipClassName)[0]==null)///////////Skip Button
+	{
+		window.open("https://expert.chegg.com/expertqna","_self");
+	}
+	else
+	{
+		i=0;
+	    document.getElementsByClassName(skipClassName)[0].click() // skip button
+	    let skipOptions = document.getElementsByClassName(reasonSelect);
+	    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
             if (document.getElementsByClassName(desktopSubmit)[0])
 		        document.getElementsByClassName(desktopSubmit)[0].click()
             //else
