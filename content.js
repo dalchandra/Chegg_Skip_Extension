@@ -4,7 +4,6 @@ var skipClassName="sc-1eq90u-7";
 var reasonSelect="q4pgtx-0 dlvpFB";
 var desktopSubmit="sc-1eq90u-7 sc-1eq90u-8 ewQEum iAtkV";
 
-
 window.addEventListener("load", function(event){
     let currentPath = window.location.href;
     let skipBtn = document.createElement("button");
@@ -39,24 +38,25 @@ window.addEventListener("click", function(event){
         //never reach
     }
 });
-
 var i=1;
 //skip function
 function skip(){
-	if(document.getElementsByClassName(skipClassName)[0]==null)///////////Skip Button
-	{
-		window.open("https://expert.chegg.com/expertqna","_self");
-	}
-	else
-	{
-		i=0;
-	    document.getElementsByClassName(skipClassName)[0].click() // skip button
-	    let skipOptions = document.getElementsByClassName(reasonSelect);
-	    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
-            if (document.getElementsByClassName(desktopSubmit)[0])
-		        document.getElementsByClassName(desktopSubmit)[0].click()
-            //else
-            //    document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()///For Mobile
+		if(document.getElementsByClassName(skipClassName)[0]==null)///////////Skip Button
+		{
+			window.open("https://expert.chegg.com/expertqna","_self");
+		}
+		else
+		{
+			i=0;
+		    document.getElementsByClassName(skipClassName)[0].click() // skip button
+		    let skipOptions = document.getElementsByClassName(reasonSelect);
+		    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
+            setTimeout(function(){
+                if (document.getElementsByClassName(desktopSubmit)[0])
+                    document.getElementsByClassName(desktopSubmit)[0].click()
+                //else
+                //    document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()///For Mobile
+            },100);
 		}
 }
 setTimeout(function(){
@@ -73,4 +73,3 @@ setTimeout(function(){
 		sound.play();
 	}
 },15000);
-
