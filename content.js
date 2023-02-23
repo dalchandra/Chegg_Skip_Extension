@@ -1,8 +1,8 @@
 var targetPath = "https://expert.chegg.com/qna/authoring/answer";
 var exitClassName = "sc-1eq90u-7 sc-1eq90u-11 ewQEum ggqCcO"; // to hide btn when exit is clicked
 var skipClassName="sc-1eq90u-7";
-var reasonSelect="q4pgtx-0 dlvpFB";
-var desktopSubmit="sc-1eq90u-7 sc-1eq90u-8 ewQEum iAtkV";
+var reasonSelect="q4pgtx-0 doeCPa";
+var desktopSubmit="sc-1eq90u-7 sc-1eq90u-8 DGwJN cJxbhG";
 
 window.addEventListener("load", function(event){
     let currentPath = window.location.href;
@@ -50,13 +50,15 @@ function skip(){
 			i=0;
 		    document.getElementsByClassName(skipClassName)[0].click() // skip button
 		    let skipOptions = document.getElementsByClassName(reasonSelect);
-		    skipOptions[skipOptions.length - 1].click() ; // to select the skip reason
+            setTimeout(function(){
+                skipOptions[skipOptions.length - 1].click() ;
+            },100);
             setTimeout(function(){
                 if (document.getElementsByClassName(desktopSubmit)[0])
                     document.getElementsByClassName(desktopSubmit)[0].click()
                 //else
                 //    document.getElementsByClassName("sc-1eq90u-5 sc-1eq90u-6 jfgqtc ibrWOj")[0].click()///For Mobile
-            },100);
+            },350);
 		}
 }
 setTimeout(function(){
@@ -73,3 +75,4 @@ setTimeout(function(){
 		sound.play();
 	}
 },15000);
+
