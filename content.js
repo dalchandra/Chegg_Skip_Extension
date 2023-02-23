@@ -1,4 +1,4 @@
-var targetPath = "https://expert.chegg.com/expertqna";
+var targetPath = "https://expert.chegg.com/qna/authoring/answer";
 var exitClassName = "sc-1eq90u-7 sc-1eq90u-11 ewQEum ggqCcO"; // to hide btn when exit is clicked
 var skipClassName="sc-1eq90u-7";
 var reasonSelect="q4pgtx-0 dlvpFB";
